@@ -1,0 +1,543 @@
+{
+	"info": {
+		"_postman_id": "206c5924-a364-44ac-b2e5-b047521f1a39",
+		"name": "Library Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18780853"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"mostafaahmed21121997@gmail.com\",\r\n    \"password\":\"Elonsol123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"elonsol\",\r\n    \"email\":\"mostafaahmed21121997@gmail.com\",\r\n    \"password\":\"Mostafa123\",\r\n    \"confirmPassword\":\"Mostafa123\",\r\n    \"phone\":\"01201278001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0MDA4OTAsImV4cCI6MTY3ODQyMjQ5MH0.87ApVFtiYPMmKdGYCW-rK8ifQ5axteFdhVA0703TY2M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDAxNGZjMjVlOWU0OWU3Y2ExZWJhMTYiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzc4MDc2MDEsImV4cCI6MTY3NzgyOTIwMX0.__0om25paU_N74eIAHZuD2ABcofdrpapls9O770Gw5g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0MDA4OTAsImV4cCI6MTY3ODQyMjQ5MH0.87ApVFtiYPMmKdGYCW-rK8ifQ5axteFdhVA0703TY2M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Mostafa\",\r\n    \"phone\":\"01149980218\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User (SOFT)",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDAxNTE1ZWY3MGM3ZjE0NzJhYWE5MmMiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzc4MDgwMjIsImV4cCI6MTY3NzgyOTYyMn0.EDIUOJ31SALfbwR2HnrFW0CIRyxUOItkTaKDjEL5TR0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forget Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"mostafaahmed21121997@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/forget_password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"forget_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vc3RhZmFhaG1lZDIxMTIxOTk3QGdtYWlsLmNvbSIsImlhdCI6MTY3NzgwODQyMSwiZXhwIjoxNjc3ODA4NTQxfQ.xFEQZLgIiC0KSPy6N-RJYKvelU1JhTTZfwVrHWu3Rdw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"Elonsol78915\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/reset_password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"reset_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0MDA4OTAsImV4cCI6MTY3ODQyMjQ5MH0.87ApVFtiYPMmKdGYCW-rK8ifQ5axteFdhVA0703TY2M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"Mostafa123\",\r\n    \"newPassword\":\"Elonsol123\",\r\n    \"confirmPassword\":\"Elonsol123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0MDA4OTAsImV4cCI6MTY3ODQyMjQ5MH0.87ApVFtiYPMmKdGYCW-rK8ifQ5axteFdhVA0703TY2M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Add Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0NjE2MTEsImV4cCI6MTY3ODQ4MzIxMX0.n-tAFjEmfx7AadKy-tfBLqj85nac7OnqU-owqv9-VhI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "path",
+									"type": "file",
+									"src": "/D:/Web Development/Front-End/Github Repo/HTML-CSS-Templates/3- Simone/images/project-3.jpg"
+								},
+								{
+									"key": "name",
+									"value": "HTML",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Programming",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "mostafa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Issue Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0NjE2MTEsImV4cCI6MTY3ODQ4MzIxMX0.n-tAFjEmfx7AadKy-tfBLqj85nac7OnqU-owqv9-VhI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookId\":\"640b51da1ef87919703a8e46\",\r\n    \"issuedDurationInDays\":7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/book/issue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"issue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Return Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0NjE2MTEsImV4cCI6MTY3ODQ4MzIxMX0.n-tAFjEmfx7AadKy-tfBLqj85nac7OnqU-owqv9-VhI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookId\":\"640b51da1ef87919703a8e46\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/book/return",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"return"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0MDA4OTAsImV4cCI6MTY3ODQyMjQ5MH0.87ApVFtiYPMmKdGYCW-rK8ifQ5axteFdhVA0703TY2M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issued Books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0MDA4OTAsImV4cCI6MTY3ODQyMjQ5MH0.87ApVFtiYPMmKdGYCW-rK8ifQ5axteFdhVA0703TY2M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/book/issue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"issue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Issued Books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0MDA4OTAsImV4cCI6MTY3ODQyMjQ5MH0.87ApVFtiYPMmKdGYCW-rK8ifQ5axteFdhVA0703TY2M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/book/search/ja",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"search",
+								"ja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Non Returned Books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDBhNWM4YWE5MzY2YjNmMjBiZTI3YjgiLCJ1c2VyRW1haWwiOiJtb3N0YWZhYWhtZWQyMTEyMTk5N0BnbWFpbC5jb20iLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc1ZlcmlmaWVkIjp0cnVlLCJpYXQiOjE2Nzg0NjE2MTEsImV4cCI6MTY3ODQ4MzIxMX0.n-tAFjEmfx7AadKy-tfBLqj85nac7OnqU-owqv9-VhI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/book/nonreturn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"nonreturn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
