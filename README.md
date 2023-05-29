@@ -3,6 +3,8 @@
 ### Overview
 This project is a full-stack library application developed using React.js for the frontend, Node.js with Express for the backend, and MongoDB as the database. The application allows users to sign up, log in, and manage their library activities such as issuing (borrowing) books for a specified duration. If a user fails to return a book within the designated time, a fee will be applied.
 
+This project utilizes the Framer Motion library to enhance the user experience with captivating animations and transitions. Framer Motion is a popular animation library for React applications that provides a simple and powerful way to create fluid and engaging user interfaces.
+
 ### Features
 #### User Management
 - **Sign Up:** Users can create an account by providing necessary details and registering with the application.
