@@ -6,7 +6,7 @@ export const sendEmail = async(options)=>{
         service:"gmail",
         auth: {
           user: "mostafaahmed21121997@gmail.com", // generated ethereal user
-          pass: "lptvtzxjbsicbalu" // generated ethereal password
+          pass: "" // generated ethereal password
         },
       });
     
